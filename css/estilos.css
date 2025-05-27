@@ -18,7 +18,6 @@
    flex-direction: row; 
    flex-wrap: nowrap;
    justify-content: space-between;
-   background-color: rebeccapurple;
 }
 
 .header-nav li{
@@ -27,12 +26,12 @@
 
 }
 
-.header-nav li a{
+.header-nav li a, .header-compras a{
     text-decoration: none;
     color: #D1342C;
 }
 
-.header-nav li a:hover {
+.header-nav li a:hover, .header-compras a:hover {
   color: #0F1C35
 }
 
@@ -40,16 +39,44 @@
    display: flex;
    flex-direction: row; 
    flex-wrap: nowrap;
-   background-color:aqua;
    align-items: center;
    justify-content: end;
-}
-
-.header-compras p{
-    color: #D1342C;
 }
 
 /*-------------------Main------------------------*/
 
 
 /*-------------------Footer------------------------*/
+
+.flex-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #D1342C;
+}
+
+.footer-row{
+    margin-right: 30px;
+}
+
+.footer-row p{
+    font-family: "Bungee", sans-serif;
+    color: #0F1C35;
+}
+
+.medioPago, .redesSociales{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.footer-contacto p{
+    color: #F6F1E9;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.medioPago i, .redesSociales i{
+
+    color: #F6F1E9;
+}
