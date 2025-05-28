@@ -8,8 +8,8 @@
   <script src="https://kit.fontawesome.com/d797edb068.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Russo+One&display=swap" rel="stylesheet">
-
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chelsea+Market&family=Russo+One&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chelsea+Market&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
   <title>Kiosuko no Manga</title>
 </head>
 <body>
@@ -20,10 +20,10 @@
     <nav>
       <ul class="header-nav">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#idManga">Mangas</a></li>
-        <li><a href="#idAnimes">Animes</a></li>
-        <li><a href="#idQuienesSomos">Quienes Somos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#manga">Mangas</a></li>
+        <li><a href="#anime">Animes</a></li>
+        <li><a href="#quienesSomos">Quiénes Somos</a></li>
+        <li><a href="#tienda">Tienda</a></li>
         <!-- <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Mis Compras</a></li> -->
       </ul>
     </nav>
@@ -31,9 +31,67 @@
       <a href="#"><i class="fa-solid fa-cart-shopping"></i> Mis compras</a></li>
     </div>
   </header>
-  <main>
 
+  <main class="flex-main">
+    <section class="section-card" id="manga">
+      <div></div>
+      <aside></aside>      
+    </section>
+    <section class="section-anime" id="anime">
+      <h2>Animes</h2>
+      <p>Próximos estrenos:</p>
+      <div class="flex-anime">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/pV_-COLJOiY" title="Lo que le falta a esta estrella | Avance oficial | Netflix [ES SUB CC]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/RSbqvK5OSFc" title="My Hero Academia FINAL SEASON | TRÁILER OFICIAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="section-quienesSomos" id="quienesSomos">
+      <h2>Quiénes Somos</h2>
+      <div class="flex-quienesSomos">
+        <div>
+          <img src="img/logoKNM.png" alt="Logo Kiosuko no Manga" width="270" height="270"> 
+        </div>
+        <div>
+          <p>En <strong>Kiosuko no Manga</strong> somos más que una tienda: somos un rincón hecho por y para fans del manga, el anime y la cultura japonesa. Nacimos de la pasión compartida por las historias que nos inspiran, los personajes que nos acompañan y los mundos que soñamos recorrer.</p>
+          <p>Desde ediciones clásicas hasta las últimas novedades, en Kiosuko no Manga seleccionamos cada producto con cuidado y cariño. Nuestro catálogo incluye mangas, figuras, merchandising oficial, accesorios, snacks japoneses ¡y mucho más! Siempre estamos buscando traer lo mejor del universo otaku directo a tus manos.</p>
+          <p>Creemos en la atención personalizada, en crear comunidad y en que cada lector encuentre ese tomo que lo atrape. Ya sea que estés dando tus primeros pasos en este mundo o tengas años de aventuras acumuladas, acá vas a sentirte en casa.</p>
+        </div>
+      </div>
+    </section>
+    <section  id="tienda">
+      <h2>Tienda</h2>
+      <div class="section-tienda">
+        <form action="" method="post" class="div-tienda">
+          <h3>Contáctanos</h3>      
+          <p>Podes escribirnos a nuestro mail: kiosukonomanga@gmail.com</p>  
+          <div class="flex-contacto">
+            <div class="card-form">
+              <label for="ApeNombre">Apellido y Nombre:</label>                
+              <input name="text" id="ApeNombre" type="text"  class="correo" required>
+            </div>
+            <div class="card-form">
+              <label for="email" class="correo">Email:</label>
+              <input name="Email" id="email" type="email"  class="correo" required>
+            </div>
+            <div class="card-form">
+              <label for="">Comentario:</label>
+              <textarea name="" id="taComentario">Ingrese el comentario</textarea>
+            </div>
+            <div class="card-form-btn">
+              <button type="submit" class="btnEnviar">Enviar</button>
+              <button type="submit" class="btnCancelar">Cancelar</button>
+            </div>
+          </div>
+        </form>
+        <div class="div-tienda">
+            <h3>Ubicación</h3> 
+            <p>Acercate a nuestra tienda en Cerrito 628, C.A.B.A., República Argentina.</p>  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.119185878566!2d-58.38590808836985!3d-34.60114755725027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1748303020082!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
   </main>
+
   <footer class="flex-footer">
     <div class="footer-row">
       <p><strong>Medio de Pago</strong></p> 
@@ -45,7 +103,7 @@
       </div>
     </div>
     <div class="footer-row">
-      <p><strong>Contactenos</strong></p>     
+      <p><strong>Contacto</strong></p>     
       <div class="footer-contacto">
         <p><i class="fa-solid fa-envelope"></i>   kiosukonomanga@gmail.com</p>
         <p><i class="fa-brands fa-whatsapp"></i>  +54 11 4567-8901</p>
@@ -60,7 +118,6 @@
         <i class="fa-brands fa-youtube" title="Youtube"></i>
       </div>
     </div>
-
   </footer>  
 </body>
 </html>

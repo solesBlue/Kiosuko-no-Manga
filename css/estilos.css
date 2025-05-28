@@ -3,6 +3,13 @@
     margin: 5px;
 }
 
+h2{
+    font-family: "Bungee", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #D1342C;
+}
+
 /*-------------------Header------------------------*/
 .flex-header{
     background-color: #F6F1E9;
@@ -44,14 +51,94 @@
 }
 
 /*-------------------Main------------------------*/
+.card-main{
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
+}
 
+.section-anime p{
+    font-family: "Russo One", sans-serif;
+}
+
+.flex-anime{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex-quienesSomos{
+    /* border: 1px solid #F6F1E9; */
+    height: 300px;
+    background-color: #F6F1E9;
+    border-radius: 5px;
+    /* box-shadow: 0px 2px 0px rgb(0,0,0,0.2); */
+    /* margin: 30px; */
+    display: flex;   
+}
+
+.flex-quienesSomos div p{
+    padding: 10px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    color: #0F1C35;
+}
+
+.section-tienda{
+    background-image: url('../img/Tienda\ de\ Manga\ y\ Anime.png');
+    background-repeat: no-repeat;  
+    background-color: #F6F1E9;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;   
+    justify-content: space-between;
+}
+
+
+.section-tienda  > .div-tienda {
+  flex: 1;              /* Que todos crezcan por igual */
+  padding: 16px;        
+  box-sizing: border-box; 
+}
+
+.flex-contacto{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F1E9;
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-tienda h3{
+    font-family: "Chelsea Market", system-ui;
+    font-weight: bolder;
+    font-style: normal; 
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo negro con transparencia */
+    color: #F5C518;
+    padding: 8px 12px;
+    border-radius: 1px;
+    display: inline-block;
+}
+
+.div-tienda p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-style: normal; 
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo negro con transparencia */
+}
 
 /*-------------------Footer------------------------*/
 
 .flex-footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #D1342C;
 }
 
@@ -73,7 +160,7 @@
 
 .footer-contacto p{
     color: #F6F1E9;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .medioPago i, .redesSociales i{
