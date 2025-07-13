@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/d797edb068.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chelsea+Market&family=Russo+One&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chelsea+Market&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+  <title>Kiosuko no Manga</title>
+</head>
+<body>
+  <header class="flex-header">
+    <div class="header-logo">
+      <img src="img/logoKNM.png" alt="Logo Kiosuko no Manga" width="150" height="150">
+    </div>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="header-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#manga">Mangas</a></li>
+        <li><a href="#anime">Animes</a></li>
+        <li><a href="#quienesSomos">Quiénes Somos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-compras">
+      <a href="#" id="abrir-carrito"><i class="fa-solid fa-cart-shopping"></i> Mis compras</a></li>
+    </div>
+    <div id="modal-carrito" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar" id="cerrar-carrito">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <section>
+          <div id="seccion_favs">
+            <div id="total_favoritos">
+            </div> 
+          </div>  
+          <button type="button" class="bntEliminar" id="delete_all">Eliminar Todos</button>       
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-main">
+        <!-- <section>
+          <div id="seccion_favs">
+            <div id="total_favoritos">
+               <h2 class="titulo" id="titulo_favs">Carrito de Compras</h2>
+            </div>
+          </div>  
+          <button type="button" class="bntEliminar" id="delete_all">Eliminar Todos</button>       
+        </section> -->
+
+
+    <section class="section-manga" id="manga">
+      <h2>Mangas</h2>
+      <p>Elegí, agregá al carrito y que empiece la aventura!</p>
+    </section>
+    <section class="section-anime" id="anime">
+      <h2>Animes</h2>
+      <p>Próximos estrenos:</p>
+      <div class="flex-anime">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/pV_-COLJOiY" title="Lo que le falta a esta estrella | Avance oficial | Netflix [ES SUB CC]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/RSbqvK5OSFc" title="My Hero Academia FINAL SEASON | TRÁILER OFICIAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="section-quienesSomos" id="quienesSomos">
+      <h2>Quiénes Somos</h2>
+      <div class="flex-quienesSomos">
+        <div>
+          <img src="img/logoKNM.png" alt="Logo Kiosuko no Manga" width="270" height="270"> 
+        </div>
+        <div>
+          <p>En <strong>Kiosuko no Manga</strong> somos más que una tienda: somos un rincón hecho por y para fans del manga, el anime y la cultura japonesa. Nacimos de la pasión compartida por las historias que nos inspiran, los personajes que nos acompañan y los mundos que soñamos recorrer.</p>
+          <p>Desde ediciones clásicas hasta las últimas novedades, en Kiosuko no Manga seleccionamos cada producto con cuidado y cariño. Nuestro catálogo incluye mangas, figuras, merchandising oficial, accesorios, snacks japoneses ¡y mucho más! Siempre estamos buscando traer lo mejor del universo otaku directo a tus manos.</p>
+          <p>Creemos en la atención personalizada, en crear comunidad y en que cada lector encuentre ese tomo que lo atrape. Ya sea que estés dando tus primeros pasos en este mundo o tengas años de aventuras acumuladas, acá vas a sentirte en casa.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="flex-footer">
+    <div class="footer-row">
+      <p><strong>Medio de Pago</strong></p> 
+      <div class="medioPago">
+        <i class="fa-brands fa-cc-visa" title="Visa"></i>
+        <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+        <i class="fa-solid fa-landmark" title="Transferencia"></i>
+        <i class="fa-solid fa-money-bill-1" title="Efectivo"></i>
+      </div>
+    </div>
+    <div class="footer-row">
+      <p><strong>Contacto</strong></p>     
+      <div class="footer-contacto">
+        <p><i class="fa-solid fa-envelope"></i>   kiosukonomanga@gmail.com</p>
+        <p><i class="fa-brands fa-whatsapp"></i>  +54 11 4567-8901</p>
+        <p><i class="fa-solid fa-location-dot"></i>  Cerrito 628, Ciudad Autónoma de Buenos Aires, República Argentina</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.119185878566!2d-58.38590808836985!3d-34.60114755725027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1748303020082!5m2!1ses!2sar" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>   
+    </div>
+    <div class="footer-row">
+      <p><strong>Nuestras Redes</strong></p>
+      <div class="redesSociales">
+        <i class="fa-brands fa-instagram" title="Instagram"></i>
+        <i class="fa-brands fa-facebook" title="Facebook"></i>
+        <i class="fa-brands fa-youtube" title="Youtube"></i>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="../js/carrito.js"></script>
+  <script src="../js/loadLocalJSON.js"></script>
+
+</body>
+</html>
