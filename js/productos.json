@@ -46,6 +46,22 @@
         "precio": 55000.00,
         "moneda": "ARG",
         "imagen": "img/Colección de personajes manga.png"
+    },
+    {
+        "id": 7,
+        "tipo": "Manga",
+        "titulo": "Jujutsu Kaisen",
+        "precio": 65000.00,
+        "moneda": "ARG",
+        "imagen": "img/Colección de personajes manga.png"
+    },
+    {
+        "id": 8,
+        "tipo": "Manga",
+        "titulo": "Attack on Titan",
+        "precio": 75000.00,
+        "moneda": "ARG",
+        "imagen": "img/Colección de personajes manga.png"
     }
 
 ]
