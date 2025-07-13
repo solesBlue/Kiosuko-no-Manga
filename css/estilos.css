@@ -20,20 +20,39 @@ h2{
     justify-content: space-around;
 }
 
-.header-nav{
+.navbar {
+  background-color: #F6F1E9;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* .header-nav{
    display: flex;
    flex-direction: row; 
    flex-wrap: nowrap;
    justify-content: space-between;
+} */
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-nav li{
     list-style-type: none;
     margin: 3px;
-
 }
 
-.header-nav li a, .header-compras a{
+.header-nav li a {
+  color: #D1342C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-compras a{
     text-decoration: none;
     color: #D1342C;
 }
@@ -48,6 +67,75 @@ h2{
    flex-wrap: nowrap;
    align-items: center;
    justify-content: end;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+/* Ícono hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: #D1342C;
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #F6F1E9;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+
+  /* Mostrar menú cuando el checkbox está checkeado */
+  .menu-checkbox:checked + .menu-icon + .header-nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/*------------------Modal de Mis Compras----------*/
+
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /*-------------------Main------------------------*/
@@ -81,11 +169,12 @@ h2{
 }
 
 .manga-card-conteiner{
-  width:80%;
+  width:100%;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   padding-left: 15px;
+  
 }
 
 .card{
@@ -117,7 +206,7 @@ h2{
     text-align: center;
 }
 
-.card a {
+.card button {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -128,6 +217,16 @@ h2{
     border-radius: 10px;
     text-align: center;
     justify-content: center;
+}
+
+.card_info{
+    margin-bottom: 15px;
+}
+
+.card_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .manga-aside{
@@ -165,7 +264,8 @@ h2{
 }
 
 .flex-quienesSomos{
-    height: 300px;
+    /* height: 330px; */
+    height:auto;
     background-color: #F6F1E9;
     border-radius: 5px;
     display: flex; 
@@ -197,17 +297,6 @@ h2{
     box-sizing: border-box; 
 }
 
-.flex-contacto{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);  /* Fondo negro con transparencia */
-}
-
-.card-form{
-    display: flex;
-    flex-direction: column;
-}
-
 .div-tienda h3{
     font-family: "Chelsea Market", system-ui;
     font-weight: bolder;
@@ -226,7 +315,7 @@ h2{
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);  
 }
-
+/* 
 .card-form label{
     font-family: "Chelsea Market", system-ui;
     font-weight: bolder;
@@ -261,7 +350,7 @@ textarea{
     font-weight: bolder;
     width: 200px;
     border-style: none;
-}
+} */
 
 .btnEnviar{
     background-color: #D1342C;
@@ -290,6 +379,7 @@ textarea{
     flex-direction: row;
     justify-content: space-around;
     background-color: #D1342C;
+    margin-top: 15px;
 }
 
 .footer-row{
@@ -297,6 +387,7 @@ textarea{
 }
 
 .footer-row p{
+    padding-top: 15px;
     font-family: "Bungee", sans-serif;
     color: #0F1C35;
 }
@@ -315,4 +406,16 @@ textarea{
 
 .medioPago i, .redesSociales i{
     color: #F6F1E9;
+}
+
+/*---------------------Favoritos-----------------*/
+
+.bntEliminar{
+    background-color: #D1342C;
+    color: #F6F1E9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #D1342C;
 }

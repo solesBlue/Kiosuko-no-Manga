@@ -1,0 +1,71 @@
+
+
+.formulario h3{
+    display: inline-block;
+    margin-top: 5px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #D1342C;
+}
+
+.formulario p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-style: normal; 
+    color: #0F1C35;
+    margin-bottom: 5px;
+    /* background-color: rgba(0, 0, 0, 0.4);   */
+}
+
+.flex-contacto{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F1E9; 
+    margin-top: 5px;
+    /* background-color: rgba(0, 0, 0, 0.4);   */
+    /* Fondo negro con transparencia */
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-form label{
+    font-family: "Chelsea Market", system-ui;
+    font-weight: bolder;
+    font-style: normal; 
+    /* color: #F5C518; */
+    color: #D1342C;
+}
+
+.card-form input{
+    box-sizing: border-box;
+}
+textarea{
+    width: auto;
+    height: 165px;
+    resize: vertical;
+    padding: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.card-form-btn{    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.card-form-btn button{
+    margin: 25px;
+    border-radius: 5px;
+    padding: 10px;    
+    font-family: "Chelsea Market", system-ui;
+    font-weight: bolder;
+    width: 200px;
+    border-style: none;
+}

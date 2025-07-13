@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "tipo": "Manga",
+        "titulo": "Dragon Ball",
+        "precio": 23000.00,
+        "moneda": "ARG",
+        "imagen": "img/GokuVsVegata.png"
+    },
+    {
+        "id": 2,
+        "tipo": "Manga",
+        "titulo": "Sailor Moon",
+        "precio": 15000.00,
+        "moneda": "ARG",
+        "imagen": "img/SailorMoon.png"
+    },
+    {
+        "id": 3,
+        "tipo": "Manga",
+        "titulo": "Naruto",
+        "precio": 25000.00,
+        "moneda": "ARG",
+        "imagen": "img/Naruto.png"
+    },
+    {
+        "id": 4,
+        "tipo": "Manga",
+        "titulo": "One Piece",
+        "precio": 35000.00,
+        "moneda": "ARG",
+        "imagen": "img/Monkey D. Luffy en acción.png"
+    },
+    {
+        "id": 5,
+        "tipo": "Manga",
+        "titulo": "Detective Conan",
+        "precio": 45000.00,
+        "moneda": "ARG",
+        "imagen": "img/Colección de personajes manga.png"
+    },
+    {
+        "id": 6,
+        "tipo": "Manga",
+        "titulo": "Blue Lock",
+        "precio": 55000.00,
+        "moneda": "ARG",
+        "imagen": "img/Colección de personajes manga.png"
+    }
+
+]
